@@ -1,0 +1,10 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+
+main {
+  max-width: 80vw;
+  margin: 0 auto;
+}
