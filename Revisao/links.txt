@@ -15,3 +15,5 @@ https://uiverse.io/buttons - buttons
 https://github.com/YURIMUTTI/RECURSOSFRONTEND
 https://github.com/arthurspk/guiadofrontend
 https://tailwindcss.com/
+
+http://www.codigoti.com.br/2018/10/css-hover-efeitos-de-transicoes-ao.html - efeitos hovoer
