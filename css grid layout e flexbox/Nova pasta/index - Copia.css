@@ -1,0 +1,60 @@
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;  /* serve para remover aquele estilo padrao que vem no css */
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    background: #1d1e20;
+    display: flex; /* para centralizar as item uma ao lado da outra */
+    justify-content: space-between; /*  space-between = espaço entre os itens */
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap; /* quando a tela for diminuida o logo sempre vai ficar sobre o flex box */
+}
+
+.menu {
+    display: flex;
+    padding: 10px ;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    background: red;
+}
+
+/* flexbox 1 */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; /* defini uma box de 800px, os itens irao ficar sempre dentro desse box */
+    margin: 0 auto; /* para alinhar sempre ao centro o box */
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
