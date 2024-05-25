@@ -1,0 +1,141 @@
+/* Reset de estilos para garantir consistência em diferentes navegadores */
+body,
+h1,
+h2,
+p,
+ul,
+ol,
+li,
+figure,
+table,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 16px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 40ch;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+input,
+textarea::placeholder {
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
+li {
+  margin: 8px 0;
+  padding: 20px;
+  border: solid 1px #ccc;
+  position: relative; /* Adicionado para posicionar o botão de editar */
+  padding-right: 50px; /* Espaço para o botão de editar */
+}
+
+li p {
+  white-space: pre-wrap;
+  margin-top: 10px;
+}
+
+/* Estilo para o botão de edição */
+.edit-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #676767;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Estilo para o dialog de edição */
+dialog {
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+dialog input,
+dialog textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+dialog button {
+  background-color: #0074d9;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+dialog button[type="button"] {
+  background-color: #ccc;
+}
